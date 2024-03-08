@@ -201,6 +201,12 @@ footer{
 }
 
 @media screen and (max-width:480px){
+    .logo{
+        width: 100px;
+        height: 50px;
+        padding-top: 20px;
+        padding-left: 35%;
+    }
     body{
         background-image: url(img/fondo-pantalla.png);
         background-repeat: no-repeat;
@@ -226,14 +232,14 @@ footer{
     }
     .aviso{
         top: 200px;
-        left: 20%;
-        height: 2%;
+        left: 19%;
+        width: 220px;
         font-size: 14px;
         word-wrap: break-word;
     }
    .botones{
     text-align: center;
-    left: 9%;
+    left: 10%;
     padding: 0.5px 0.5px 0.5px 0.5px;
     top: 230px;
    }
@@ -243,20 +249,22 @@ footer{
    .desencriptar-boton{
     margin: 4px;
    }
+
+   .seccion-demostradora{
+    top: 360px;
+    width: 85%;
+    height: 200px;
+    padding: 1px 1px 1px 1px;
+    left: 12%;
+    position: absolute;
+}
    .parrafo-encriptado{
     top: 40px;
-    left: 3%;
+    left: auto;
     text-align: center;
     margin: 1em 1em;
    }
-    .seccion-demostradora{
-        top: 360px;
-        width: 85%;
-        height: 200px;
-        padding: 1px 1px 1px 1px;
-        left: 11%;
-        position: absolute;
-    }
+    
    
     .imagen-muneco{
         display: none;
@@ -268,7 +276,8 @@ footer{
     }
     .copiar{
         top: 120px;
-        left: 16%;
+        left: 12%;
+        right: 12%;
         padding-left: 0;
     }
     footer{
@@ -279,7 +288,8 @@ footer{
         color: #c1bcbc;
         font-size: 15px;
         width: 70%;
-        left: 12%;
+        left: 13%;
         word-wrap: break-word;
+        padding: 0 0 50px;
     }
 }
