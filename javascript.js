@@ -127,7 +127,7 @@ function verificarMayusculas() {
         var comparacion = /[a-z]/; // 
         
         if (!comparacion.test(textoaverificar)) {
-            
+            removerResultado()
             alert('El texto debe contener solo letras minúsculas, sin números, acentos ni mayúsculas.');
             textoaencriptar.value = "";
         } 
