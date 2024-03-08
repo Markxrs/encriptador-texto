@@ -345,7 +345,6 @@ footer{
    .desencriptar-boton{
     margin: 4px;
    }
-
    .desencriptar-boton:active{
     background-color: #0a3872;
     color: white;

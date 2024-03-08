@@ -4,6 +4,7 @@ let muneco = document.querySelector(".imagen-muneco");
 let mostraEncriptado = document.querySelector(".parrafo-encriptado");
 let  cajaresultado = document.querySelector(".resultado");
 let textoaencriptar = document.querySelector(".caja");
+let mensajeEmergente = document.querySelector(".mensajecontenedor")
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick= desencriptar;
@@ -124,13 +125,14 @@ function textoBotonorigen(){
 
 function verificarMayusculas() {
         let textoaverificar = textoaencriptar.value;
-        var comparacion = /[a-z]/; // 
-        
+        var comparacion = /[a-z]/;
         if (!comparacion.test(textoaverificar)) {
-            removerResultado()
-            alert('El texto debe contener solo letras minúsculas, sin números, acentos ni mayúsculas.');
+            window.alert('Solo letras minusculas y sin acentos');
             textoaencriptar.value = "";
+            removerResultado()
         } 
                
     }
+
+
 
