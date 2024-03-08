@@ -11,9 +11,10 @@ botonDesencriptar.onclick= desencriptar;
 
 function encriptar(){
     ocultarAdelante();
+    verificarMayusculas(textoaencriptar);
     let cajaTexto = recuperarTexto();
     cajaresultado.textContent = encriptarText(cajaTexto);
-    verificarMayusculas(textoaencriptar);
+ 
     textoBotonorigen();
 }
 
@@ -125,7 +126,7 @@ function textoBotonorigen(){
 
 function verificarMayusculas() {
         let textoaverificar = textoaencriptar.value;
-        var comparacion = /[a-z]/;
+        var comparacion = /^[a-z]^/;
         if (!comparacion.test(textoaverificar)) {
             window.alert('Solo letras minusculas y sin acentos');
             textoaencriptar.value = "";
