@@ -99,6 +99,11 @@ main{
     margin-right: 20px;
     cursor: pointer;
 }
+.desencriptar-boton:hover{
+    background-color: #0a3872;
+    color: white;
+    transition: 0.2s;
+}
 
 .seccion-demostradora{
     display: block;
@@ -137,7 +142,7 @@ main{
 
 .parrafo-encriptado h3{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 700px;
     text-align: center;
     color: #2a2f33;
 }
@@ -151,18 +156,16 @@ main{
 }
 
 .resultado{
-    position:absolute;
     bottom: 590px;
     width: 350px;
     height: 70px;
-    padding: 1px;
+    padding: 10px;
     box-sizing: border-box;
-    margin-left: 25px;
-    font-size: 20px;
+    margin-left: 15px;
+    font-size: 22px;
     word-wrap: break-word;
-    color: #a2bcdc;
+    color: #b9d8ff;
 }
-
 
 .copiar{
     display: flex;
@@ -298,7 +301,7 @@ footer{
         width: 100px;
         height: 50px;
         padding-top: 20px;
-        padding-left: 35.5%;
+        padding-left: 36%;
     }
     body{
         background-image: url(img/fondo-pantalla.png);
