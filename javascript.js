@@ -3,6 +3,7 @@ let botonDesencriptar = document.querySelector(".desencriptar-boton");
 let muneco = document.querySelector(".imagen-muneco");
 let mostraEncriptado = document.querySelector(".parrafo-encriptado");
 let  cajaresultado = document.querySelector(".resultado");
+let textoaencriptar = document.querySelector(".caja");
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick= desencriptar;
@@ -11,12 +12,15 @@ function encriptar(){
     ocultarAdelante();
     let cajaTexto = recuperarTexto();
     cajaresultado.textContent = encriptarText(cajaTexto);
+    verificarMayusculas(textoaencriptar);
+    textoBotonorigen();
 }
 
 function desencriptar(){
     ocultarAdelante();
     let cajaTexto = recuperarTexto();
     cajaresultado.textContent = desencriptarText(cajaTexto);
+    textoBotonorigen();
 }
 
 function recuperarTexto(){
@@ -94,5 +98,39 @@ const botonCopiar = document.querySelector(".copiar-boton");
 botonCopiar.addEventListener("click", copiar = () =>{
     let contenido = document.querySelector(".resultado").textContent;
     navigator.clipboard.writeText(contenido);
-    console.log("hola");
+    limpiarcaja();
+    removerResultado();
+    textoBoton();
+
 })
+function limpiarcaja(){
+    document.querySelector('.caja').value = '';
+}
+
+function removerResultado(){
+    var resultado = document.querySelector('.resultado');
+    resultado.innerHTML = ''
+
+}
+
+function textoBoton(){
+    var boton = document.querySelector('.copiar-boton');
+    boton.value = 'Texto copiado';
+}
+function textoBotonorigen(){
+    var boton = document.querySelector('.copiar-boton');
+    boton.value = 'Copiar';
+}
+
+function verificarMayusculas() {
+        let textoaverificar = textoaencriptar.value;
+        var comparacion = /[a-z]/; // 
+        
+        if (!comparacion.test(textoaverificar)) {
+            
+            alert('El texto debe contener solo letras minúsculas, sin números, acentos ni mayúsculas.');
+            textoaencriptar.value = "";
+        } 
+               
+    }
+

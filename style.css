@@ -301,7 +301,7 @@ footer{
         width: 100px;
         height: 50px;
         padding-top: 20px;
-        padding-left: 36%;
+        padding-left: 39%;
     }
     body{
         background-image: url(img/fondo-pantalla.png);
@@ -335,7 +335,7 @@ footer{
     }
    .botones{
     text-align: center;
-    left: 10%;
+    left: 9%;
     padding: 0.5px 0.5px 0.5px 0.5px;
     top: 230px;
    }
@@ -346,12 +346,18 @@ footer{
     margin: 4px;
    }
 
+   .desencriptar-boton:active{
+    background-color: #0a3872;
+    color: white;
+    transition: 0.7s;
+   }
+
    .seccion-demostradora{
     top: 360px;
     width: 85%;
     height: 200px;
     padding: 1px 1px 1px 1px;
-    left: 12%;
+    left: 13%;
     position: absolute;
 }
    .parrafo-encriptado{
