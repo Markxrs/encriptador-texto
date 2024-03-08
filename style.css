@@ -3,7 +3,10 @@
 }
 
 body{
-    background-color: #f4f4fc;
+    background-image: url(img/fondo-pantalla.png);
+    background-repeat: no-repeat;
+
+    background-size: cover;
 }
 
 header{
@@ -38,32 +41,33 @@ main{
 
 .caja{
     width: 80%;
-    height: 100%;
+    height: 80%;
     border: none;
-    background-color: #f4f4fc;
+    background-color: rgba(169, 165, 165, 0.5);
     cursor: pointer;
-    color: #0a3872;
+    color: #a2bcdc;
     font-size: 32px;
     font-weight: 400;
+    border-radius: 10px;
 }
 
 .caja::placeholder {
-    color: #0a3872;
+    color: #a2bcdc;
 }
 
 .aviso{
     position: absolute;
-    top: 750px;
-    left: 370px;
+    top: 600px;
+    left: 310px;
     display: flex;
-    color: #495057;
+    color: #d1d5d9;
 }
 
 .botones{
     position: absolute;
-    top: 800px;
+    top: 643px;
     height: 80px;
-    padding-left: 15%;
+    padding-left: 17%;
     padding-top: 15px;
 }
 
@@ -76,6 +80,7 @@ main{
     font-size: 16px;
     font-weight: 400;
     border: none;
+    border-color: none;
     margin-right: 20px;
     cursor: pointer;
 }
@@ -89,6 +94,7 @@ main{
     font-size: 16px;
     font-weight: 400;
     border: none;
+    border-color: none;
     margin-right: 20px;
     cursor: pointer;
 }
@@ -97,28 +103,35 @@ main{
     display: block;
     position: relative;
     width: 400px;
-    height: 900px;
-    right: 30px;
+    height: 680px;
+    right: 100px;
     padding-right: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
     border-radius: 32px;
     box-shadow: 0 24px 32px -8px #000000;
+    top: 54px;
 }
 
 .imagen-muneco{
     position: absolute;
-    left: 30px;
-    top: 180px;
+    left: 55px;
+    top: 100px;
     box-sizing: border-box;
     padding-top: 50px;
+
+}
+
+.imagen-muneco img{
+    width: 300px;
+    height: 256px;
 }
 
 .parrafo-encriptado{
     position: absolute;
     box-sizing: border-box;
-    top: 570px;
-    left: 40px;
+    top: 410px;
+    left: 20px;
 }
 
 .parrafo-encriptado h3{
@@ -136,26 +149,27 @@ main{
     padding-top: 20px;  
 }
 
+
+
 .resultado{
     position:absolute;
-    bottom: 410px;
-    width: 320px;
-    height: 450px;
-    padding: 0;
+    bottom: 590px;
+    width: 350px;
+    height: 70px;
+    padding: 1px;
     box-sizing: border-box;
     margin-left: 25px;
+    font-size: 20px;
+    word-wrap: break-word;
+    color: #a2bcdc;
 }
 
-.resultado p{
-    color: #495057;
-    font-size: 25px;
-}
 
 .copiar{
     display: flex;
     position: absolute;
     bottom: 400px;
-    top: 700px;
+    top: 490px;
     background-color: aqua;
     padding-left: 40px;
 }
@@ -177,6 +191,14 @@ main{
 
 .ocultar{
     display: none;
+}
+
+footer{
+    position: relative;
+    top:750px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #c1bcbc;
 }
 
 @media screen and (max-width:480px){
