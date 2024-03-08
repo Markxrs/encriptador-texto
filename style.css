@@ -31,17 +31,17 @@ main{
 
 .texto{
     position: absolute;
-    left: 200px;
-    top: 100px;
+    left: 80px;
+    top: 40px;
     padding-left: 100px;
-    width: 1080px;
-    height: 600px;
+    width: 950px;
+    height: 500px;
     border: none;
 }
 
 .caja{
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     border: none;
     background-color: rgba(169, 165, 165, 0.5);
     cursor: pointer;
@@ -57,23 +57,24 @@ main{
 
 .aviso{
     position: absolute;
-    top: 600px;
-    left: 310px;
+    top: 400px;
+    left: 185px;
     display: flex;
     color: #d1d5d9;
+    font-size: 15px;
 }
 
 .botones{
     position: absolute;
-    top: 643px;
+    top: 410px;
     height: 80px;
-    padding-left: 17%;
+    padding-left: 19.5%;
     padding-top: 15px;
 }
 
 .encriptar-boton{
-    width: 328px;
-    height: 67px;
+    width: 250px;
+    height: 55px;
     border-radius: 24px;
     background-color: #0a3872;
     color: white;
@@ -86,8 +87,8 @@ main{
 }
 
 .desencriptar-boton{
-    width: 328px;
-    height: 67px;
+    width: 250px;
+    height: 55px;
     border-radius: 24px;
     background-color: #d8dfe8;
     color: #0a3871;
@@ -102,54 +103,52 @@ main{
 .seccion-demostradora{
     display: block;
     position: relative;
-    width: 400px;
-    height: 680px;
+    width: 380px;
+    height: 470px;
     right: 100px;
     padding-right: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
     border-radius: 32px;
     box-shadow: 0 24px 32px -8px #000000;
-    top: 54px;
+    top: 15px;
 }
 
 .imagen-muneco{
     position: absolute;
     left: 55px;
-    top: 100px;
+    top: 40px;
     box-sizing: border-box;
-    padding-top: 50px;
+    padding-top: 10px;
 
 }
 
 .imagen-muneco img{
-    width: 300px;
-    height: 256px;
+    width: 280px;
+    height: 186px;
 }
 
 .parrafo-encriptado{
     position: absolute;
     box-sizing: border-box;
-    top: 410px;
-    left: 20px;
+    top: 250px;
+    left: 50px;
 }
 
 .parrafo-encriptado h3{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
-    color: #343a40;
+    color: #2a2f33;
 }
 
 .parrafo-encriptado p{
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    color: #495057; 
+    color: #41464b; 
     padding-top: 20px;  
 }
-
-
 
 .resultado{
     position:absolute;
@@ -169,14 +168,14 @@ main{
     display: flex;
     position: absolute;
     bottom: 400px;
-    top: 490px;
+    top: 290px;
     background-color: aqua;
-    padding-left: 40px;
+    padding-left: 74px;
 }
 
 .copiar-boton{
-    width: 320px;
-    height: 67px;
+    width: 250px;
+    height: 60px;
     border-radius: 24px;
     background-color: white;
     color:#0a3871;
@@ -185,7 +184,7 @@ main{
     border: 1px solid #0a3871;
     cursor: pointer;
     position: relative;
-    top: 100px;
+    top: 95px;
     right: 4px;
 }
 
@@ -195,7 +194,7 @@ main{
 
 footer{
     position: relative;
-    top:750px;
+    top: 530px;
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #c1bcbc;
