@@ -126,7 +126,7 @@ function textoBotonorigen(){
 
 function verificarMayusculas() {
         let textoaverificar = textoaencriptar.value;
-        var comparacion = /^[a-z]^/;
+        var comparacion = /^[A-Z]^/;
         if (!comparacion.test(textoaverificar)) {
             window.alert('Solo letras minusculas y sin acentos');
             textoaencriptar.value = "";
